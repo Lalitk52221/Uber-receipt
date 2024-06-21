@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Uber Move';
+  src: url('./public/Fonts/UberMove-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uber Move';
+  src: url('./public/Fonts/UberMoveBold.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uber Move';
+  src: url('./public/Fonts/UberMoveMedium.otf') format('otf');
+  font-weight: medium;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Uber Move', sans-serif;
+}
