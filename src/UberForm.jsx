@@ -206,7 +206,7 @@ const UberForm = () => {
           />
         </div>
         <div>
-          <label className="block font-semibold">Kilometer</label>
+          <label className="block font-semibold">Distance in Kilometer</label>
           <input
             type="number"
             name="kilometer"
