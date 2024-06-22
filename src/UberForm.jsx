@@ -70,9 +70,11 @@ const UberForm = () => {
 
   return (
     <div className="w-1024 flex justify-start items-start p-5 gap-5 uberform">
+      
       <form
         className="bg-gray-100 h-fit rounded-lg p-4 gap-y-6 flex flex-wrap columns-2 gap-x-2 items-start justify-start "
       >
+        <h1 className="w-full flex justify-center font-bold text-2xl">Enter Details Here</h1> <div className="w-full h-0.5 rounded-full -my-3 bg-gray-300" />
         <div>
           <label className="block font-semibold">Name</label>
           <input
@@ -81,6 +83,7 @@ const UberForm = () => {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             className="w-full p-2 border rounded"
+            placeholder="Enter Your Name"
           />
         </div>
         <div>
@@ -91,6 +94,7 @@ const UberForm = () => {
             value={formData.date}
             onChange={(e) => setFormData({ ...formData, date: e.target.value })}
             className="w-full p-2 border rounded"
+            
           />
         </div>
         {/* <div>
@@ -184,6 +188,7 @@ const UberForm = () => {
               setFormData({ ...formData, driverName: e.target.value })
             }
             className="w-full p-2 border rounded"
+            placeholder="Driver Name"
           />
         </div>
         <div>
@@ -196,6 +201,7 @@ const UberForm = () => {
               setFormData({ ...formData, carNumber: e.target.value })
             }
             className="w-full p-2 border rounded"
+            placeholder="HR-72-C5654"
           />
         </div>
         <div>
@@ -208,6 +214,7 @@ const UberForm = () => {
               setFormData({ ...formData, kilometer: e.target.value })
             }
             className="w-full p-2 border rounded"
+            
           />
         </div>
         <div>
@@ -220,6 +227,7 @@ const UberForm = () => {
               setFormData({ ...formData, distance: e.target.value })
             }
             className="w-full p-2 border rounded"
+            
           />
         </div>
         <div>
