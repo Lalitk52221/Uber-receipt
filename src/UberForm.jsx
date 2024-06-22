@@ -3,6 +3,7 @@ import { FormContext } from "./FormContext";
 import "./App.css";
 import cashLogo from "./assets/cash.png";
 import location from "./assets/location.png";
+import Uberlogo from './assets/Uber-Logo.png'
 // import { format } from 'date-fns';
 
 // utility function to format date
@@ -299,7 +300,7 @@ const UberForm = () => {
       <div className="flex justify-end">
         <div className="h-[1200px] w-[900px] text-xs font-medium border-gray-200 border-2  bg-white flex flex-col px-20 py-20 gap-y-4">
           <div className="flex flex-row justify-between items-end">
-            <h1 className="text-4xl font-extrabold">Uber</h1>
+            <img src={Uberlogo} alt="Uber logo" width={80} />
             <p className="text- font-medium text-gray-500">{formattedDate}</p>
           </div>
           <div className="w-full border-t-2 bg-gray-600" />
