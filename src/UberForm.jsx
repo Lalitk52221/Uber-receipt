@@ -70,9 +70,9 @@ const UberForm = () => {
 
 
   return (
-    <div className="w-screen flex justify-start p-5 gap-5 uberform">
+    <div className="w-1024 flex justify-start p-5 gap-5 uberform">
       <form
-        className="bg-gray-100 h-fit rounded-lg p-4 gap-y-6 grid gap-x-2 grid-cols-2 w-1/3"
+        className="bg-gray-100 h-fit rounded-lg p-4 gap-y-6 flex flex-wrap columns-2 gap-x-2 "
       >
         <div>
           <label className="block font-semibold">Name</label>
