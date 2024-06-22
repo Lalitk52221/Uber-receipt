@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { FormContext } from "./FormContext";
 import "./App.css";
 import cashLogo from "./assets/cash.png";
@@ -32,7 +32,6 @@ const UberForm = () => {
   const {
     name,
     date,
-    time,
     totalAmount,
     subtotal,
     waitTime,
@@ -70,9 +69,9 @@ const UberForm = () => {
 
 
   return (
-    <div className="w-1024 flex justify-start p-5 gap-5 uberform">
+    <div className="w-1024 flex justify-start items-start p-5 gap-5 uberform">
       <form
-        className="bg-gray-100 h-fit rounded-lg p-4 gap-y-6 flex flex-wrap columns-2 gap-x-2 "
+        className="bg-gray-100 h-fit rounded-lg p-4 gap-y-6 flex flex-wrap columns-2 gap-x-2 items-start justify-start "
       >
         <div>
           <label className="block font-semibold">Name</label>
@@ -290,7 +289,7 @@ const UberForm = () => {
       {/* Uber Receipt */}
 
       <div className="flex justify-end">
-        <div className="h-[1200px] w-[900px] text-xs font-medium bg-white flex flex-col px-20 py-20 gap-y-4">
+        <div className="h-[1200px] w-[900px] text-xs font-medium border-gray-200 border-2  bg-white flex flex-col px-20 py-20 gap-y-4">
           <div className="flex flex-row justify-between items-end">
             <h1 className="text-4xl font-extrabold">Uber</h1>
             <p className="text- font-medium text-gray-500">{formattedDate}</p>
