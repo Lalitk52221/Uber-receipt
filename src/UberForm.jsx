@@ -211,7 +211,7 @@ const UberForm = () => {
               setFormData({ ...formData, carNumber: e.target.value })
             }
             className="w-full p-2 border rounded"
-            placeholder="HR-72-C5654"
+            placeholder="HR72C5654"
           />
         </div>
         <div>
