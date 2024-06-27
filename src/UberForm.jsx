@@ -49,14 +49,23 @@ const UberForm = () => {
     distance,
   } = formData;
 
+  // const formattedDate = formatDate(date);
+  // const formattedsubtotal = Number(subtotal).toFixed(2).toLocaleString();
+  // const formattedGST = Number(gst).toFixed(2).toLocaleString();
+  // const formattedMCD = Number(mcdDelhiToll).toFixed(2).toLocaleString();
+  // const cashformattedDate = cashDateformat(date);
+  // const formattedpicupTime = formatTimeShort(pickupTime);
+  // const formatteddropTime = formatTimeShort(dropTime);
+  // const formattedtotal = Number(totalAmount).toFixed(2).toLocaleString();
   const formattedDate = formatDate(date);
-  const formattedsubtotal = Number(subtotal).toFixed(2).toLocaleString();
-  const formattedGST = Number(gst).toFixed(2).toLocaleString();
-  const formattedMCD = Number(mcdDelhiToll).toFixed(2).toLocaleString();
+  const formattedsubtotal = Number(subtotal).toLocaleString(undefined, { minimumFractionDigits: 2 });
+  const formattedGST = Number(gst).toLocaleString(undefined, { minimumFractionDigits: 2 });
+  const formattedMCD = Number(mcdDelhiToll).toLocaleString(undefined, { minimumFractionDigits: 2 });
   const cashformattedDate = cashDateformat(date);
   const formattedpicupTime = formatTimeShort(pickupTime);
   const formatteddropTime = formatTimeShort(dropTime);
-  const formattedtotal = Number(totalAmount).toFixed(2).toLocaleString();
+  const formattedtotal = Number(totalAmount).toLocaleString(undefined, { minimumFractionDigits: 2 });
+
   const calculateTotal = () => {
     let total = 0;
     total = Number(subtotal) + Number(mcdDelhiToll) + Number(rounding)+ Number(waitTime);
